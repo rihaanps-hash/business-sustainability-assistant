@@ -41,7 +41,7 @@ let transactions=[
   {person:'Nisha Patel',initials:'NP',detail:'Customer · Yesterday',type:'Credit given',amount:1250,status:'Pending'}
 ];
 const pageInfo={
- dashboard:['Good morning, Meera','Here’s what’s happening at your store today.'],
+ dashboard:['Good morning, Rihaan','Here’s what’s happening at your store today.'],
  payments:['Payments','Keep tabs on money coming in and going out.'],
  profit:['Profit & Loss','A clear picture of what your store is earning.'],
  waste:['Waste Reduction','Small actions today can make a big difference.'],
