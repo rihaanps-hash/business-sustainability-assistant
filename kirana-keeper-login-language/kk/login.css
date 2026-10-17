@@ -1,0 +1,81 @@
+/* Kirana Keeper auth page — burgundy and ivory */
+.kk-auth-page {
+  min-height: 100vh;
+  margin: 0;
+  background: #fbf7f0;
+  color: #35242a;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.kk-auth-page * { box-sizing: border-box; }
+.kk-auth-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(320px, .92fr) minmax(440px, 1.08fr);
+}
+.kk-auth-brand {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(28px, 5vw, 68px);
+  background: #4a1d2c;
+  color: #fff8ef;
+  isolation: isolate;
+}
+.kk-brand { display: inline-flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; font-weight: 750; letter-spacing: -.03em; font-size: 20px; position: relative; z-index: 1; }
+.kk-brand-mark { width: 38px; height: 38px; display: inline-grid; place-items: center; border-radius: 12px 12px 12px 4px; background: #f1d9b8; color: #4a1d2c; font-family: Georgia, serif; font-size: 23px; font-weight: 800; }
+.kk-brand-copy { max-width: 510px; position: relative; z-index: 1; margin: 70px 0; }
+.kk-eyebrow { margin: 0 0 13px; color: #a16d7b; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+.kk-brand .kk-eyebrow, .kk-auth-brand .kk-eyebrow { color: #e7c39e; }
+.kk-brand-copy h1 { margin: 0; max-width: 520px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 5vw, 70px); font-weight: 500; line-height: 1.04; letter-spacing: -.055em; }
+.kk-brand-copy h1 em { color: #edc99f; font-weight: 500; }
+.kk-brand-copy > p:last-child { max-width: 370px; margin-top: 24px; color: #e3d0d0; font-size: 16px; line-height: 1.75; }
+.kk-brand-foot { position: relative; z-index: 1; color: #d8bfc5; font-size: 12px; letter-spacing: .04em; }
+.kk-decoration { position: absolute; z-index: -1; border: 1px solid #ffffff15; border-radius: 50%; }
+.kk-decoration-one { width: 420px; height: 420px; right: -190px; top: 15%; box-shadow: 0 0 0 42px #ffffff05, 0 0 0 84px #ffffff04; }
+.kk-decoration-two { width: 270px; height: 270px; left: -140px; bottom: 8%; box-shadow: 0 0 0 35px #ffffff05, 0 0 0 70px #ffffff04; }
+.kk-auth-panel { min-width: 0; display: flex; flex-direction: column; padding: 24px clamp(24px, 5vw, 72px) 22px; }
+.kk-auth-topline { min-height: 42px; display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+.kk-mobile-brand { display: none; align-items: center; gap: 9px; color: #4a1d2c; font-weight: 750; }
+.kk-mobile-brand .kk-brand-mark { width: 30px; height: 30px; font-size: 18px; }
+.kk-language-control { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid #e6d9d2; border-radius: 10px; background: #fffdf9; }
+.kk-language-control select { max-width: 120px; border: 0; outline: 0; background: transparent; color: #4a1d2c; font: inherit; font-size: 12px; cursor: pointer; }
+.kk-auth-form-wrap { width: 100%; max-width: 420px; margin: auto; padding: 32px 0; }
+.kk-auth-form-wrap h2 { margin: 0; color: #38212a; font-family: Georgia, "Times New Roman", serif; font-size: clamp(29px, 3vw, 39px); font-weight: 500; letter-spacing: -.04em; }
+.kk-auth-subtitle { margin: 12px 0 25px; color: #817279; font-size: 14px; line-height: 1.6; }
+.kk-auth-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; padding: 5px; margin-bottom: 25px; border-radius: 12px; background: #f0e8e0; }
+.kk-tab { padding: 11px 10px; border: 0; border-radius: 8px; background: transparent; color: #796970; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.kk-tab.is-active { background: #fffdf9; color: #4a1d2c; box-shadow: 0 2px 7px #4a1d2c0d; }
+.kk-field { margin: 0 0 17px; }
+.kk-field[hidden] { display: none; }
+.kk-field label { display: block; margin-bottom: 8px; color: #4e3b42; font-size: 12px; font-weight: 750; }
+.kk-field input { width: 100%; min-height: 47px; padding: 12px 13px; border: 1px solid #e3d6d0; border-radius: 10px; outline: none; background: #fffdf9; color: #35242a; font: inherit; font-size: 14px; transition: border-color .15s, box-shadow .15s; }
+.kk-field input::placeholder { color: #b2a5a5; }
+.kk-field input:focus { border-color: #9b6577; box-shadow: 0 0 0 3px #9b65771b; }
+.kk-label-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.kk-text-button { border: 0; padding: 0; background: transparent; color: #8a405b; font: inherit; font-size: 11px; font-weight: 750; cursor: pointer; }
+.kk-password-wrap { position: relative; }
+.kk-password-wrap input { padding-right: 65px; }
+.kk-show-password { position: absolute; top: 50%; right: 12px; transform: translateY(-50%); border: 0; background: transparent; color: #8a405b; font: inherit; font-size: 11px; font-weight: 750; cursor: pointer; }
+.kk-submit { width: 100%; min-height: 49px; display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 7px; padding: 12px 16px; border: 0; border-radius: 10px; background: #4a1d2c; color: #fff9f1; font: inherit; font-size: 14px; font-weight: 750; cursor: pointer; transition: transform .15s, background .15s; }
+.kk-submit:hover { background: #60283b; transform: translateY(-1px); }
+.kk-submit:focus-visible, .kk-tab:focus-visible, .kk-text-button:focus-visible { outline: 3px solid #c89aab; outline-offset: 3px; }
+.kk-form-message { display: none; margin: 0 0 12px; padding: 10px 12px; border-radius: 9px; background: #f9e9e5; color: #8b2d36; font-size: 12px; line-height: 1.5; }
+.kk-form-message.is-visible { display: block; }
+.kk-auth-divider { display: flex; align-items: center; gap: 12px; margin: 25px 0 12px; color: #b09fa2; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+.kk-auth-divider::before, .kk-auth-divider::after { content: ""; height: 1px; flex: 1; background: #e9ded8; }
+.kk-privacy-note { margin: 0; color: #9b8c90; font-size: 11px; line-height: 1.65; text-align: center; }
+.kk-auth-footer { text-align: center; color: #b09fa2; font-size: 11px; }
+@media (max-width: 850px) {
+  .kk-auth-shell { grid-template-columns: 1fr; }
+  .kk-auth-brand { display: none; }
+  .kk-auth-panel { min-height: 100vh; padding: 18px 22px 20px; }
+  .kk-auth-topline { justify-content: space-between; }
+  .kk-mobile-brand { display: inline-flex; }
+  .kk-auth-form-wrap { max-width: 440px; padding: 38px 0; }
+}
+@media (max-width: 420px) {
+  .kk-auth-panel { padding-inline: 18px; }
+  .kk-auth-form-wrap h2 { font-size: 30px; }
+}

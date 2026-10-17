@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4a1d2c">
+  <title>Sign in · Kirana Keeper</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="kk-auth-page">
+  <main class="kk-auth-shell">
+    <section class="kk-auth-brand">
+      <a class="kk-brand" href="index.html" aria-label="Kirana Keeper home">
+        <span class="kk-brand-mark">K</span>
+        <span>Kirana Keeper</span>
+      </a>
+      <div class="kk-brand-copy">
+        <p class="kk-eyebrow">YOUR SHOP, IN GOOD HANDS</p>
+        <h1>A little more in order, <em>every day.</em></h1>
+        <p>Keep track of stock, sales and expenses in one calm, simple workspace.</p>
+      </div>
+      <div class="kk-brand-foot">Made for neighbourhood shops · India</div>
+      <div class="kk-decoration kk-decoration-one"></div>
+      <div class="kk-decoration kk-decoration-two"></div>
+    </section>
+
+    <section class="kk-auth-panel" aria-labelledby="auth-heading">
+      <div class="kk-auth-topline">
+        <span class="kk-mobile-brand"><span class="kk-brand-mark">K</span> Kirana Keeper</span>
+        <label class="kk-language-control">
+          <span aria-hidden="true">🌐</span>
+          <select id="auth-language" aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="te">తెలుగు</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="kk-auth-form-wrap">
+        <p class="kk-eyebrow" id="form-eyebrow">WELCOME BACK</p>
+        <h2 id="auth-heading">Sign in to your shop</h2>
+        <p class="kk-auth-subtitle" id="auth-subtitle">Enter your details to continue to Kirana Keeper.</p>
+
+        <div class="kk-auth-tabs" role="tablist" aria-label="Account options">
+          <button class="kk-tab is-active" id="signin-tab" type="button" role="tab" aria-selected="true">Sign in</button>
+          <button class="kk-tab" id="signup-tab" type="button" role="tab" aria-selected="false">Create account</button>
+        </div>
+
+        <form id="auth-form" novalidate>
+          <div class="kk-field" id="name-field" hidden>
+            <label for="full-name" data-i18n="fullName">Your name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Ravi Kumar">
+          </div>
+
+          <div class="kk-field" id="shop-field" hidden>
+            <label for="shop-name" data-i18n="shopName">Shop name</label>
+            <input id="shop-name" name="shopName" type="text" autocomplete="organization" placeholder="e.g. Sri Lakshmi Kirana">
+          </div>
+
+          <div class="kk-field">
+            <label for="email" data-i18n="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="kk-field">
+            <div class="kk-label-row">
+              <label for="password" data-i18n="password">Password</label>
+              <button class="kk-text-button" id="forgot-button" type="button">Forgot password?</button>
+            </div>
+            <div class="kk-password-wrap">
+              <input id="password" name="password" type="password" autocomplete="current-password" minlength="8" placeholder="At least 8 characters" required>
+              <button class="kk-show-password" id="toggle-password" type="button" aria-label="Show password">Show</button>
+            </div>
+          </div>
+
+          <div class="kk-field" id="confirm-field" hidden>
+            <label for="confirm-password" data-i18n="confirmPassword">Confirm password</label>
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Enter password again">
+          </div>
+
+          <div class="kk-form-message" id="form-message" role="status" aria-live="polite"></div>
+          <button class="kk-submit" id="submit-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+
+        <div class="kk-auth-divider"><span>YOUR BUSINESS, YOUR SPACE</span></div>
+        <p class="kk-privacy-note" id="privacy-note">Your shop records should stay private. Secure account authentication will be connected in the next setup step.</p>
+      </div>
+      <footer class="kk-auth-footer">© <span id="year"></span> Kirana Keeper</footer>
+    </section>
+  </main>
+  <script src="login.js"></script>
+  <script src="language.js"></script>
+</body>
+</html>
